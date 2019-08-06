@@ -1,7 +1,7 @@
 module github.com/GoogleCloudPlatform/terraform-validator
 
 require (
-	github.com/GoogleCloudPlatform/terraform-google-conversion v0.0.0-20190517181531-30d4358dc839
+	github.com/GoogleCloudPlatform/terraform-google-conversion v0.0.0-20190726162242-407a94c29a5d
 	github.com/forseti-security/config-validator v0.0.0-20190619160113-b8fae8e864e3
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/protobuf v1.3.1
@@ -15,6 +15,7 @@ require (
 	github.com/stretchr/testify v1.3.0
 	github.com/terraform-providers/terraform-provider-google v2.0.0+incompatible
 	github.com/zclconf/go-cty v0.0.0-20190212192503-19dda139b164 // indirect
-	google.golang.org/api v0.4.0
-	google.golang.org/genproto v0.0.0-20190327125643-d831d65fe17d
+	golang.org/x/build v0.0.0-20190111050920-041ab4dc3f9d // indirect
+	google.golang.org/api v0.6.0
+	google.golang.org/genproto v0.0.0-20190502173448-54afdca5d873
 )
