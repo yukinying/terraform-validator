@@ -46,7 +46,7 @@ Example:
 		return nil
 	},
 	RunE: func(c *cobra.Command, args []string) error {
-		assets, err := tfgcv.ReadPlannedAssets(args[0], flags.convert.project, flags.convert.ancestry, flags.tfVersion)
+		assets, err := tfgcv.ReadPlannedAssets(args[0], flags.convert.project, flags.convert.ancestry, flags.tfVersion, false)
 		if err != nil {
 			return errors.Wrap(err, "converting tfplan to CAI assets")
 		}
