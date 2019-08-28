@@ -54,6 +54,12 @@ func TestReadPlannedAssets(t *testing.T) {
 		// 	2,
 		// 	false,
 		// },
+		{
+			"Test TF12 and JSON plan with all the supported resources",
+			args{"tf12plan.all.json", "foobar", testAncestryName, tfplan.TF12, true},
+			9,
+			false,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
